@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+html,body{
+    height: 100%;
+    font-family: Roboto;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size: 32px;
+    height: 100px;
+    background-image:linear-gradient(to right, rgb(91, 158, 158),rgb(90, 138, 138));
+}
+
+.main{
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.announcement{
+    height: 70px;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+    width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 32px;
+    border-radius: 32px;
+    box-shadow: 0px 8px 8px rgb(0, 0, 0,0.3);
+}
+
+.content{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arena{
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    grid-auto-rows: 100px;
+    margin: 8px;
+}
+
+.cell{
+    font-family: "Indie Flower", cursive;
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.blue{
+    color: blue;
+}
+
+.red{
+    color: red;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    transition: ease-in 0.3s;
+}
+
+.container{
+    position: absolute;
+    top:0; bottom:0; right:0; left:0;
+    margin:auto;
+    z-index: 1;
+    height: 200px;
+    width:300px;
+    padding: 16px;
+    color: white;
+    background-color: #0b0a10;
+    text-align: center;
+    border-radius: 32px;
+    font-size: 32px;
+    font-weight: bold;
+    transform:scale(1);
+    transition:ease-in 0.2s;
+    font-size: 1.5em;
+}
+
+.name{
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: none;
+}
+
+.start{
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+}
+
+button:hover{
+    background-color: aquamarine;
+}
+
+
+.hide{
+    transform: scale(0);
+}
+
+.score-board{
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24px;
+    margin: auto;
+    width: 400px;
+    margin-top: 16px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 6px;
+    box-shadow: 0px 5px 8px rgb(0, 0, 0,0.3)
+}
+
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+.options > button{
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+.player{
+    display: flex;
+    justify-content: center;
+    gap: 8px
+}
+button:active{
+    background-color: cadetblue;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">TIC TAC TOE</div>
+
+    <div class="main">
+        <div class="game-info">
+            <div class="score-board">
+                <span class="player1"></span><span class="p1score"></span> <span>-</span> 
+                <span class="p2score"></span><span class="player2"> </span>
+            </div>
+            <div class="announcement"></div>
+        </div>
+        <div class="content">
+            <div class="arena">
+              
+            </div>
+            <div class="container">
+                <p>Choose Player names:</p>
+                <div class="player">
+                    <input type="text" class='name' id="1" maxlength="10" value="Player1">
+                </div>
+                <div class="player">
+                    <input type="text" class="name" id="2" maxlength="10" value="Player2">
+                </div>
+                <button class="start">Play</button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <div class="options hide">
+            <button class="playAgain">Play again</button>
+            <button class="restart">Restart</button></div>
+        </div>
+</body>
+</html>
